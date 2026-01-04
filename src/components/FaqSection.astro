@@ -1,0 +1,43 @@
+---
+import AccordionQuestions from "./AccordionQuestions.astro";
+
+const questions = [
+  {
+    question: "¿Qué tipo de trabajos realizan?",
+    answer:
+      "Ofrecemos servicios de impresión digital de alta calidad, incluyendo cartelería, ploteos, lonas, vinilos, microperforados, señalética, adhesivos, banners y más.",
+  },
+  {
+    question: "¿Atienden únicamente a empresas grandes?",
+    answer:
+      "No. Trabajamos con todo tipo de clientes: emprendedores, pequeños negocios, empresas medianas y marcas reconocidas a nivel nacional.",
+  },
+  {
+    question: "¿Brindan servicio de diseño gráfico o solo impresión?",
+    answer:
+      "Brindamos ambos servicios. Podemos trabajar a partir de tu diseño o crear una propuesta visual profesional especialmente para tu proyecto.",
+  },
+  {
+    question: "¿Cuál es el tiempo estimado de entrega?",
+    answer:
+      "Depende del tipo de trabajo, pero usualmente realizamos entregas rápidas en un plazo de 24 a 72 horas, manteniendo siempre la calidad.",
+  },
+  {
+    question: "¿Dónde están ubicados?",
+    answer:
+      "Estamos ubicados en Hohenau, departamento de Itapúa, Paraguay. Atendemos tanto en nuestro local como de forma online.",
+  },
+  {
+    question: "¿Cómo puedo hacer una consulta o solicitar un presupuesto?",
+    answer:
+      "Podés contactarnos por WhatsApp, correo electrónico o visitar nuestro local. Te asesoramos y preparamos un presupuesto sin compromiso.",
+  },
+];
+
+---
+
+<section
+  class="flex flex-col items-center justify-between bg-blue-50 px-12 md:px-48 py-16">
+  <h2 class="mb-4 text-4xl font-semibold text-center">Preguntas frecuentes</h2>
+  <AccordionQuestions questions={questions} />
+</section>

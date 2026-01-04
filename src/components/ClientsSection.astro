@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import amandau from "../assets/clients/amandau.png";
+import ccu from "../assets/clients/ccu.png";
+import farmacenter from "../assets/clients/farmacenter.png";
+import odontoExcellence from "../assets/clients/odonto_excellence.png";
+import pajarito from "../assets/clients/pajarito.png";
+import prosoil from "../assets/clients/prosoil.png";
+---
+
+<section class="flex flex-col items-center px-12 md:px-48 py-16">
+  <h2 class="mb-4 text-center text-4xl font-semibold">
+    Algunos de nuestros clientes
+  </h2>
+  <div
+    class="my-5 flex w-full flex-wrap items-center justify-evenly gap-5 [&>*]:h-32 [&>*]:w-32 [&>*]:object-contain">
+    <Image src={pajarito} alt="Logo de Pajarito" />
+    <Image src={odontoExcellence} alt="Logo de Odonto Excellence" />
+    <Image src={ccu} alt="Logo de Cooperativa Colonias Unidas" />
+    <Image src={prosoil} alt="Logo de Prosoil" />
+    <Image src={farmacenter} alt="Logo de Farmacenter" />
+    <Image src={amandau} alt="Logo de Amandau" />
+  </div>
+</section>

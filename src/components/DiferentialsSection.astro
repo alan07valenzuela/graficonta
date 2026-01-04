@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import trophy from "../assets/trophy.png";
+import shield from "../assets/shield.png";
+import paperPlane from "../assets/paper-plane.png";
+---
+
+<section class="flex flex-col items-center bg-blue-100 px-12 md:px-48 py-16">
+  <div class="flex items-center gap-3">
+    <span class="h-1 w-10 bg-blue-800"></span>
+    <p class="text-sm font-semibold text-blue-800 text-center">CALIDAD Y RAPIDEZ</p>
+    <span class="h-1 w-10 bg-blue-800"></span>
+  </div>
+  <h2 class="mb-4 text-4xl font-semibold text-center">¿Por qué elegirnos?</h2>
+  <div
+    class="flex justify-center flex-wrap gap-5 [&>section]:flex-[1_1_300px] [&>section]:flex [&>section]:flex-col [&>section]:items-center [&>section]:text-center [&>section>h3]:text-2xl [&>section>h3]:font-semibold [&>section>p]:text-gray-600">
+    <section>
+      <Image src={trophy} alt="Icono de trofeo" class="my-5 h-48 w-auto" />
+      <h3>Trayectoria</h3>
+      <p>
+        Más de una década trabajando junto a empresas reconocidas a nivel
+        nacional y emprendedores locales nos avala.
+      </p>
+    </section>
+    <section>
+      <Image
+        src={paperPlane}
+        alt="Icono de avion de papel"
+        class="my-5 h-48 w-auto"
+      />
+      <h3>Asesoría integral</h3>
+      <p>
+        Desde la idea hasta la instalación final, te acompañamos para que tu
+        gráfica comunique lo que tu negocio necesita.
+      </p>
+    </section>
+    <section>
+      <Image src={shield} alt="Icono de escudo" class="my-5 h-48 w-auto" />
+      <h3>Durabilidad</h3>
+      <p>
+        La calidad es nuestra prioridad: seleccionamos insumos resistentes y
+        garantizamos acabados impecables.
+      </p>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+---
+const { title, desc, href } = Astro.props;
+---
+
+<div class="flex flex-col items-center">
+  <div class="z-10 grid size-28 place-items-center rounded-full bg-white">
+    <div class="size-2/5 fill-red-700 stroke-red-700">
+      <slot />
+    </div>
+  </div>
+  <div class="-mt-16 h-48 w-64 rounded-md bg-white">
+    <div class="pt-16 text-center text-body whitespace-pre-line">
+      <h3 class="text-xl font-semibold text-gray-900">{title}</h3>
+      {href ? <a target="_blank" href={href}>{desc}</a> : <p>{desc}</p>}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+---
+import {
+  LightGallery,
+  type AstroLightGalleryImgType,
+} from "astro-lightgallery";
+
+const modules = import.meta.glob("/src/assets/gallery/*");
+const images: AstroLightGalleryImgType[] = [];
+for (const path in modules) {
+  images.push({ src: path });
+}
+---
+
+<LightGallery
+  layout={{ imgs: images, adaptive: { zoom: 130 } }}
+  options={{ thumbnail: true }}
+/>

@@ -1,0 +1,27 @@
+---
+import Service from "./Service.astro";
+import ploteado from "../assets/ploteado.png";
+import banners from "../assets/banners.png";
+import corporeo from "../assets/corporeo.png";
+import adhesivo from "../assets/adhesivo.png";
+import luzExterna from "../assets/luzexterna.png";
+import luzInterna from "../assets/luzinterna.png";
+---
+
+<section
+  class="flex flex-col items-center justify-between bg-blue-800 px-8 md:px-20 py-10">
+  <h2 class="text-4xl font-semibold text-white text-center">Nuestros servicios</h2>
+  <div class="mt-8 flex w-full flex-wrap justify-center gap-x-6 gap-y-5">
+    <Service title="Ploteado" imageSrc={ploteado} />
+    <Service title="Banners" imageSrc={banners} />
+    <Service title="Letra corpórea" imageSrc={corporeo} />
+    <Service title="Adhesivos" imageSrc={adhesivo} />
+    <Service title="Luz externa" imageSrc={luzExterna} />
+    <Service title="Luz interna" imageSrc={luzInterna} />
+  </div>
+  <a
+    href="#"
+    class="mt-6 inline-block self-center rounded-md border-3 border-white px-8 py-2 text-lg text-nowrap text-white"
+    >Ver todo →</a
+  >
+</section>

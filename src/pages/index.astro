@@ -1,20 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import AboutUsCard from "../components/AboutUsCard.astro";
-import CallToAction from "../components/CallToAction.astro";
+import Header from "../components/LandingHeader.astro";
+import AboveTheFold from "../components/AboveTheFold.astro";
+import ServicesSection from "../components/ServicesSection.astro";
+import AboutUsSection from "../components/AboutUsSection.astro";
+import DiferentialsSection from "../components/DiferentialsSection.astro";
+import ClientsSection from "../components/ClientsSection.astro";
 import Footer from "../components/Footer.astro";
+import GallerySection from "../components/GallerySection.astro";
+import FaqSection from "../components/FaqSection.astro";
+import CallToActionSection from "../components/CallToActionSection.astro";
 ---
 
 <Layout>
   <Header />
-  <main class="flex flex-col gap-8">
-    <img
-      src="local_de_graficonta.webp"
-      alt="Fotografía del local de Graficonta"
-    />
-    <AboutUsCard />
-    <CallToAction />
-  </main>
+  <AboveTheFold />
+  <ServicesSection />
+  <AboutUsSection />
+  <DiferentialsSection />
+  <ClientsSection />
+  <GallerySection />
+  <FaqSection />
+  <CallToActionSection />
   <Footer />
 </Layout>

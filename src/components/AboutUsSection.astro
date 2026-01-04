@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import map from "../assets/mapa_paraguay.png";
+---
+
+<section
+  class="flex flex-col-reverse items-center gap-10 px-12 py-16 md:px-48 lg:flex-row">
+  <div class="flex-1/2 p-10">
+    <Image
+      src={map}
+      alt="Ubicación de Graficonta en Paraguay"
+      class="w-80% mx-auto lg:max-w-[550px] lg:w-full"
+    />
+  </div>
+  <div class="flex flex-1/2 flex-col">
+    <h2 class="text-4xl font-semibold">
+      Hacemos que tu marca se vea y se sienta profesional
+    </h2>
+    <p class="mt-4 text-gray-600">
+      La primera impresión cuenta, y nosotros nos aseguramos de que la tuya deje
+      huella. Desde la ciudad de <b>
+        Hohenau, en el departamento de Itapúa, Paraguay
+      </b>; llevamos <b>más de 10 años</b> ayudando a negocios de todos los tamaños
+      a aumentar su visibilidad y posicionar su marca de manera efectiva.
+    </p>
+    <p class="mt-4 text-gray-600">
+      Ya sea que busques atraer más clientes a tu local, reforzar la presencia
+      de tu empresa o destacar en eventos y espacios públicos, ofrecemos
+      soluciones gráficas que combinan diseño, calidad y rapidez. Trabajamos con
+      compromiso para que cada pieza comunique <b>
+        confianza y profesionalismo
+      </b>.
+    </p>
+    <a
+      href="#"
+      class="mt-6 inline-block w-fit self-center rounded-md border-3 border-blue-800 px-[10%] sm:px-16 py-2 text-lg font-bold text-nowrap text-blue-800 lg:self-start">
+      Más sobre nosotros
+    </a>
+  </div>
+</section>

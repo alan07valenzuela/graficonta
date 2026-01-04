@@ -4,8 +4,9 @@ import {
   type AstroLightGalleryImgType,
 } from "astro-lightgallery";
 
-const modules = import.meta.glob("/src/assets/gallery/*");
+const modules = import.meta.glob("/src/assets/gallery/*", { eager: true });
 const images: AstroLightGalleryImgType[] = [];
+
 for (const path in modules) {
   images.push({ src: path });
 }

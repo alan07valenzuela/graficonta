@@ -5,10 +5,10 @@ import billboard from "../assets/graficonta_billboard.png";
 ---
 
 <section
-  class="relative flex w-full justify-center overflow-hidden sm:max-h-[750px] sm:min-h-[700px] md:h-[95vh] md:max-h-[800px] lg:max-h-[830px]">
+  class="relative flex w-full justify-center overflow-hidden md:h-[95vh] md:max-h-[850px] md:min-h-[800px] lg:max-h-[700px] lg:min-h-[650px]">
   <div
-    class="flex flex-col items-center justify-center gap-10 overflow-hidden px-10 pt-28 pb-8 sm:pt-24 md:flex-row md:gap-20 md:px-20">
-    <div class="z-10 flex max-w-lg flex-col text-center md:text-start">
+    class="mx-10 mt-24 md:mt-14 flex max-w-[1400px] flex-col items-center justify-center gap-10 overflow-hidden md:mx-20 md:flex-row md:gap-20">
+    <div class="z-10 flex flex-2 flex-col text-center md:text-start">
       <h1 class="text-5xl">
         Cartelería de <span class="font-bold">calidad</span>,<br />entregada al
         <span class="font-bold">instante</span>
@@ -24,13 +24,14 @@ import billboard from "../assets/graficonta_billboard.png";
         Solicitá tu presupuesto
       </a>
     </div>
-    <Image
-      src={billboard}
-      alt="Cartel rutero con el logo de Graficonta"
-      class="z-10 -mb-14 w-full max-w-[1000px] self-end md:w-1/2 xl:mb-0 xl:self-baseline"
-      quality="high"
-      priority
-    />
+    <div class="z-10 flex-3 self-end lg:self-start">
+      <Image
+        src={billboard}
+        alt="Cartel rutero con el logo de Graficonta"
+        quality="high"
+        priority
+      />
+    </div>
   </div>
   <Image
     src={background}

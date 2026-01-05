@@ -10,6 +10,7 @@
 @keyframes header-scroll {
   from {
     background-position-y: bottom;
+    padding-bottom: .5rem;
   }
   to {
     background-position-y: top;

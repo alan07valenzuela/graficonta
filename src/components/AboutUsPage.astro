@@ -1,0 +1,111 @@
+---
+import { Image } from "astro:assets";
+import historyPicture from "../assets/graficonta_2011.avif";
+import misionPicture from "../assets/mision.avif";
+import visionPicture from "../assets/vision.avif";
+import goalsPicture from "../assets/fachada.avif";
+---
+
+<main
+  class="m-auto flex max-w-2xl flex-col items-center gap-10 px-4 pb-8 sm:px-6 xl:max-w-5xl [&_h2]:mb-2 [&_h2]:text-4xl [&_p]:mb-2 [&_p]:indent-8">
+  <h1 class="pt-24 text-4xl font-bold -mb-5">Sobre nosotros</h1>
+  <section>
+    <h2>Historia</h2>
+    <p>
+      Nuestra empresa se creó el 11 de abril del año 2006, bajo el nombre de
+      Multiconta, ofreciendo inicialmente servicios profesionales de
+      contabilidad.
+    </p>
+    <p>
+      Con el transcurrir del tiempo y ante la necesidad de poner a disposición
+      de los clientes una mayor comodidad surge la idea de habilitar una
+      imprenta propia para ofrecer los trabajos de impresiones en general que
+      demandan nuestros clientes contables. La habilitación oficial fue el 25 de
+      noviembre de 2010.
+    </p>
+    <p>
+      Al disponer del equipamiento de imprenta y del personal adecuado, en el
+      año 2013 sumamos al ya existente rubro, el servicio de serigrafía para
+      impresiones en otras técnicas sobre otros tipos de materiales. De la misma
+      manera ante la constante demanda de los clientes en el año 2015
+      habilitamos el rubro de cartelería, incorporando algunas maquinarias
+      necesarias para la misma.
+    </p>
+    <p>
+      Todo este crecimiento constante fue muy bien visto por nuestros clientes
+      de contabilidad, quienes actualmente encuentran disponible en un mismo
+      lugar la posibilidad de cumplir con sus necesidades empresariales en el
+      área de contabilidad, papelería comercial, carteleria y publicidad, así
+      como otros requerimientos del área.
+    </p>
+    <div class="mt-4 px-16">
+      <Image
+        src={historyPicture}
+        alt="Fotografía de Graficonta en el año 2011"
+      />
+    </div>
+  </section>
+  <section class="flex gap-5 md:flex-row-reverse md:items-center">
+    <div class="flex-1">
+      <h2>Misión</h2>
+      <p>
+        Satisfacer las necesidades en el área de impresión gráfica, comercial,
+        publicitaria y contable de nuestros clientes, cumpliendo con calidad y
+        rapidez procurando la preservación del medio ambiente y contribuyendo al
+        desarrollo del país.
+      </p>
+    </div>
+    <div class="flex-1">
+      <Image
+        src={misionPicture}
+        alt="Fotografía de la impresora de lonas de Graficonta"
+      />
+    </div>
+  </section>
+  <section class="flex gap-5 md:flex-row md:items-center">
+    <div class="flex-1">
+      <h2>Visión</h2>
+      <p>
+        Ser reconocida como una empresa consolidada que cumple en calidad y
+        tiempo, con responsabilidad y honestidad, gracias a la capacidad de su
+        gente, tecnología de punta, sobre todo brindando una atención amable y
+        cordial dentro de un ambiente alegre mostrando mucha pasión por el
+        trabajo.
+      </p>
+    </div>
+    <div class="flex-1">
+      <Image
+        src={visionPicture}
+        alt="Fotografía de la impresora de lonas de Graficonta"
+      />
+    </div>
+  </section>
+  <section>
+    <h2>Objetivos</h2>
+    <ul>
+      <li>
+        Tratamos a nuestros clientes con amabilidad y cordialidad, brindando
+        calidad humana.
+      </li>
+      <li>
+        Nos relacionamos con nuestros clientes de una manera auténtica,
+        cumplimos las promesas que hacemos; buscando siempre la transparencia en
+        todo momento.
+      </li>
+      <li>
+        La confianza es uno de nuestros primordiales valores creando un lazo
+        familiar en la relación comercial.
+      </li>
+      <li>
+        Hacemos nuestro trabajo con mucha pasión y entrega, disfrutando del
+        proceso hacia el éxito.
+      </li>
+      <li>
+        Somos una empresa agradecida con Dios y comprometida con la comunidad.
+      </li>
+    </ul>
+    <div class="mt-4 px-16">
+      <Image src={goalsPicture} alt="Fachada de las oficinas de Graficonta" />
+    </div>
+  </section>
+</main>

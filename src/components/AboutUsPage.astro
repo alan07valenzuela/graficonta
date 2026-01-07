@@ -8,7 +8,7 @@ import goalsPicture from "../assets/fachada.avif";
 
 <main
   class="m-auto flex max-w-2xl flex-col items-center gap-10 px-4 pb-8 sm:px-6 xl:max-w-5xl [&_h2]:mb-2 [&_h2]:text-4xl [&_p]:mb-2 [&_p]:indent-8">
-  <h1 class="pt-24 text-4xl font-bold -mb-5">Sobre nosotros</h1>
+  <h1 class="-mb-5 pt-24 text-4xl font-bold">Sobre nosotros</h1>
   <section>
     <h2>Historia</h2>
     <p>
@@ -38,14 +38,14 @@ import goalsPicture from "../assets/fachada.avif";
       área de contabilidad, papelería comercial, carteleria y publicidad, así
       como otros requerimientos del área.
     </p>
-    <div class="mt-4 px-16">
+    <div class="mt-4 md:px-16">
       <Image
         src={historyPicture}
         alt="Fotografía de Graficonta en el año 2011"
       />
     </div>
   </section>
-  <section class="flex gap-5 md:flex-row-reverse md:items-center">
+  <section class="flex flex-col gap-5 md:flex-row-reverse md:items-center">
     <div class="flex-1">
       <h2>Misión</h2>
       <p>
@@ -62,7 +62,7 @@ import goalsPicture from "../assets/fachada.avif";
       />
     </div>
   </section>
-  <section class="flex gap-5 md:flex-row md:items-center">
+  <section class="flex flex-col gap-5 md:flex-row md:items-center">
     <div class="flex-1">
       <h2>Visión</h2>
       <p>
@@ -104,7 +104,7 @@ import goalsPicture from "../assets/fachada.avif";
         Somos una empresa agradecida con Dios y comprometida con la comunidad.
       </li>
     </ul>
-    <div class="mt-4 px-16">
+    <div class="mt-4 md:px-16">
       <Image src={goalsPicture} alt="Fachada de las oficinas de Graficonta" />
     </div>
   </section>

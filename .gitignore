@@ -1,4 +1,6 @@
 # generated types
+.vercel/
+dist/
 .astro/
 
 # dependencies

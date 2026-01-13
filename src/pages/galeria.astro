@@ -14,7 +14,7 @@ const imagesUrl: AstroLightGalleryImgType[] = [];
 
 const { data: dbImages, error } = await supabase.storage
   .from(BUCKET_NAME)
-  .list();
+  .list('carteleria');
 
 if (dbImages) {
   for (const dbImage of dbImages) {

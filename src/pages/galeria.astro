@@ -10,22 +10,21 @@ import {
 } from "astro-lightgallery";
 
 const BUCKET_NAME = "galeria";
+const FOLDER_NAME = "carteleria";
 const imagesUrl: AstroLightGalleryImgType[] = [];
 
 const { data: dbImages, error } = await supabase.storage
   .from(BUCKET_NAME)
-  .list('carteleria');
+  .list(FOLDER_NAME);
 
 if (dbImages) {
   for (const dbImage of dbImages) {
     const { data } = supabase.storage
       .from(BUCKET_NAME)
-      .getPublicUrl(dbImage.name);
+      .getPublicUrl(`${FOLDER_NAME}/${dbImage.name}`);
     imagesUrl.push({ src: data.publicUrl });
   }
 }
-
-console.log(error);
 ---
 
 <Layout>
